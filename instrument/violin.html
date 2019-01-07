@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <style type = "text/css">
+      body {
+          background-image: url(violinback.jpg);
+          background-repeat: no-repeat;
+          background-size:1400px 800px;
+          background-attachment: fixed;
+          color: white;
+          font-family: Tahoma;
+      }
+     p{
+        color: white;
+        font-family:Tahoma;
+      }
+     .link{
+        color: white;
+        font-family:Tahoma;
+       }
+     img{
+      width: 300px;
+      height: 300px;
+      position: relative;
+       float:left;
+     }
+     a{
+	    text-decoration:none;
+	    color:rgb(250, 158, 20);
+    }	
+    a:hover{
+      text-decoration: none;
+      color: rgb(243, 178, 79);
+      font-weight: bold;
+    }
+    div {
+    width: 320px;
+    height: 320px;
+    position: relative;
+    float:left;
+    color:aliceblue;
+    }
+    .intro{
+        color:#f1bfbd;
+        font-family:monospace;
+        font-size:20px;
+    }
+    .intro2{
+        color:rgb(247, 205, 157);
+        font-family:monospace;
+        font-size:20px;
+    }
+
+    .down{
+    -webkit-animation-name: example; 
+    -webkit-animation-duration: 8s; 
+    animation-name: example;
+    animation-duration: 8s;
+    }
+    .up{
+    -webkit-animation-name: example; 
+    -webkit-animation-duration: 8s; 
+    animation-name: example2;
+    animation-duration: 8s;
+    }
+    span{
+        align:center;
+        font-size: 50px;
+        color:rgb(170, 77, 2);
+        font-family:fantasy;
+    }
+    @-webkit-keyframes example {
+    0%   {background-color:#f15c37ec; left:0px; top:0px;}
+    25%  {background-color:#e64506fa; left:200px; top:0px;}
+    50%  {background-color:hsla(27, 52%, 41%, 0.953); left:200px; top:300px;}
+    75%  {background-color:rgb(219, 156, 60); left:0px; top:300px;}
+    100% {background-color:#f19a37c9; left:0px; top:0px;}
+    }
+    @keyframes example {
+    0%   {background-color:#f15c37ec;left:0px; top:0px;}
+    25%  {background-color:#e64506fa; left:200px; top:0px;}
+    50%  {background-color:hsla(27, 52%, 41%, 0.953); left:200px; top:400px;}
+    75%  {background-color:rgb(219, 156, 60); left:0px; top:300px; left:0px; top:300px;}
+    100% {background-color:#f19a37c9;  left:0px; top:0px;}
+    }
+    @-webkit-keyframes example2 {
+    0%   {background-color:#f15c37ec; left:0px; top:0px;}
+    25%  {background-color:#e64506fa; left:200px; top:0px;}
+    50%  {background-color:hsla(27, 52%, 41%, 0.953); left:200px; top:-300px;}
+    75%  {background-color:rgb(219, 156, 60); left:0px; top:-300px;}
+    100% {background-color:#f19a37c9; left:0px; top:0px;}
+    }
+    @keyframes example2 {
+    0%   {background-color:#f15c37ec; left:0px; top:0px;}
+    25%  {background-color:#e64506fa; left:200px; top:0px;}
+    50%  {background-color:hsla(27, 52%, 41%, 0.953); left:200px; top:-300px;}
+    75%  {background-color:rgb(219, 156, 60); left:0px; top:-300px; left:0px; top:-300px;}
+    100% {background-color:#f19a37c9;  left:0px; top:0px;}
+    }
+      </style>
+        <script src="snow.js" type="text/javascript">
+            function MakeSnow() {
+                for(var i=0;i<500;i++){
+                    var snow =document.createElement("span");
+                    snow.className="snow";
+                    snow.innerText="*";
+                    document.body.appendChild(snow);
+                    Fall(snow);
+                }
+            }
+            function Fall(obj) {
+                var W = window.innerWidth - obj.offsetWidth;
+                var H = window.innerHeight - obj.offsetHeight;
+                obj.style.posLeft = Math.random()*W;
+                obj.style.posTop = Math.random()*H;
+                var vX = Math.random()*3 +1;
+                var vY = Math.random()*3 +1;
+                setInterval(function(){
+                        with(obj.style){
+                            posTop+=vY;
+                            posLeft+=vX;
+                            if(posTop >H){
+                                posTop=0;
+                            }
+                            if(posLeft >W){
+                                posLeft=0;
+                            }
+                        }
+                },50);
+            }
+            </script>
+                <embed src="violinbgm.mp3" autostart="true" loop="true" hidden="true" ></embed>
+   </head>
+   <body>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <p>
+        <span>This is violin learning field</span>
+    </p>
+    <p>
+        <span style="color:rgb(190, 62, 62);">Click on a name to go to that website</span>
+    </p>
+    <p>
+            <a  href = "http://violinlab.com/">
+            <div class="down"><img src="violin-1.jpg"  border="0">
+                <span class="intro">Violin Lab exists for one purpose: to teach you to play the violin really well!<br>
+                        We guide beginning players through every step of the violin learning process. Based on 25 years of teaching experience, we have created a highly effective, thoughtfully sequenced curriculum designed to train professional level skills. Our Beginning training method for violin is the most in depth, comprehensive method on the internet.
+                </span>
+            </div></a>
+            <a href = "https://artistworks.com/violin-lessons-richard-amoroso">
+            <div class="up"><img src="violin-2.jpg"  border="0">
+                <span class="intro2"> Richard Amoroso has developed a rich library with hundreds of online classical violin lessons. Students have unlimited access to the interactive violin lessons including sheet music and play along tracks. Learn how to play classical violin from a virtuoso.
+            </span></div></a>
+            <a href = "https://www.violinschool.com/">
+            <div class="down"><img src="violin-3.jpg"  border="0">
+                <span class="intro">
+                        Our video lessons, sheet music, online courses, learning resources and practice tools help anyone, of any age and level, to learn and play the violin.
+            </span></div></a>
+    </p>
+ 
+   </body>
+</html>

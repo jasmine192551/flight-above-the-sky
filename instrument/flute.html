@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <style type = "text/css">
+      body {
+          background-image: url(fluteback.png);
+          background-repeat: no-repeat;
+          background-size:1400px 800px;
+          background-attachment: fixed;
+          color: white;
+          font-family: Tahoma;
+      }
+     p{
+        color: white;
+        font-family:Tahoma;
+      }
+     .link{
+        color: white;
+        font-family:Tahoma;
+       }
+     img{
+      width: 300px;
+      height: 300px;
+      position: relative;
+       float:left;
+     }
+     a{
+	    text-decoration:none;
+	    color:rgb(250, 158, 20);
+    }	
+    a:hover{
+      text-decoration: none;
+      color: rgb(243, 178, 79);
+      font-weight: bold;
+    }
+    div {
+    width: 320px;
+    height: 320px;
+    position: relative;
+    float:left;
+    color:aliceblue;
+    }
+    .intro{
+        color:aliceblue;
+        font-family:monospace;
+        font-size:20px;
+    }
+    .intro2{
+        color:rgb(178, 203, 224);
+        font-family:monospace;
+        font-size:20px;
+    }
+
+    .down{
+    -webkit-animation-name: example; 
+    -webkit-animation-duration: 8s; 
+    animation-name: example;
+    animation-duration: 8s;
+    }
+    .up{
+    -webkit-animation-name: example; 
+    -webkit-animation-duration: 8s; 
+    animation-name: example2;
+    animation-duration: 8s;
+    }
+    span{
+        align:center;
+        font-size: 50px;
+        color:rgb(240, 162, 98);
+        font-family:fantasy;
+    }
+    @-webkit-keyframes example {
+    0%   {background-color:rgba(241, 223, 55, 0.836); left:0px; top:0px;}
+    25%  {background-color:rgba(251, 255, 30, 0.979); left:200px; top:0px;}
+    50%  {background-color:rgba(243, 148, 40, 0.952); left:200px; top:300px;}
+    75%  {background-color:hsl(78, 49%, 44%); left:0px; top:300px;}
+    100% {background-color:rgba(241, 223, 55, 0.836); left:0px; top:0px;}
+    }
+    @keyframes example {
+    0%   {background-color:rgba(241, 223, 55, 0.836); left:0px; top:0px;}
+    25%  {background-color:rgba(251, 255, 30, 0.979); left:200px; top:0px;}
+    50%  {background-color:rgba(243, 148, 40, 0.952); left:200px; top:400px;}
+    75%  {background-color:hsl(78, 49%, 44%); left:0px; top:300px; left:0px; top:300px;}
+    100% {background-color:rgba(241, 223, 55, 0.836);  left:0px; top:0px;}
+    }
+    @-webkit-keyframes example2 {
+    0%   {background-color:rgba(241, 223, 55, 0.836); left:0px; top:0px;}
+    25%  {background-color:rgba(251, 255, 30, 0.979); left:200px; top:0px;}
+    50%  {background-color:rgba(243, 148, 40, 0.952); left:200px; top:-300px;}
+    75%  {background-color:hsl(78, 49%, 44%); left:0px; top:-300px;}
+    100% {background-color:rgba(241, 223, 55, 0.836); left:0px; top:0px;}
+    }
+    @keyframes example2 {
+    0%   {background-color:rgba(241, 223, 55, 0.836); left:0px; top:0px;}
+    25%  {background-color:rgba(251, 255, 30, 0.979); left:200px; top:0px;}
+    50%  {background-color:rgba(243, 148, 40, 0.952); left:200px; top:-300px;}
+    75%  {background-color:hsl(78, 49%, 44%); left:0px; top:-300px; left:0px; top:-300px;}
+    100% {background-color:rgba(241, 223, 55, 0.836);  left:0px; top:0px;}
+    }
+      </style>
+        <script src="snow.js" type="text/javascript">
+            function MakeSnow() {
+                for(var i=0;i<500;i++){
+                    var snow =document.createElement("span");
+                    snow.className="snow";
+                    snow.innerText="*";
+                    document.body.appendChild(snow);
+                    Fall(snow);
+                }
+            }
+            function Fall(obj) {
+                var W = window.innerWidth - obj.offsetWidth;
+                var H = window.innerHeight - obj.offsetHeight;
+                obj.style.posLeft = Math.random()*W;
+                obj.style.posTop = Math.random()*H;
+                var vX = Math.random()*3 +1;
+                var vY = Math.random()*3 +1;
+                setInterval(function(){
+                        with(obj.style){
+                            posTop+=vY;
+                            posLeft+=vX;
+                            if(posTop >H){
+                                posTop=0;
+                            }
+                            if(posLeft >W){
+                                posLeft=0;
+                            }
+                        }
+                },50);
+            }
+            </script>
+                <embed src="flutekiss.mp3" autostart="true" loop="true" hidden="true" ></embed>
+   </head>
+   <body>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <p>
+        <span>This is flute learning field</span>
+    </p>
+    <p>
+        <span style="color:rgb(230, 140, 140);">Click on a name to go to that website</span>
+    </p>
+    <p>
+            <a  href = "https://firstflute.com/home.html">
+            <div class="down"><img src="galway.jpg"  border="0">
+                <span class="intro">This interactive series of online lessons teaches the foundations of playing from the World’s leading exponent of the instrument. Every aspect of technique is covered; every facet of musicality is explored.</span>
+            </div></a>
+            <a href = "https://www.flutetunes.com/links.php">
+            <div class="up"><img src="tune.jpg"  border="0">
+                <span class="intro2"> Guides on getting started with your flute playing.
+            </span></div></a>
+            <a href = "https://artistworks.com/flute-lessons-jeffrey-khaner">
+            <div class="down"><img src="fluteonline.png"  border="0">
+                <span class="intro">
+                        This interactive series of online lessons teaches the foundations of playing from the World’s leading exponent of the instrument. Every aspect of technique is covered; every facet of musicality is explored.
+            </span></div></a>
+    </p>
+ 
+   </body>
+</html>
