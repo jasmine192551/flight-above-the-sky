@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>instrument</title> 
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
+      <style type = "text/css">
+      body{
+           background-color:rgba(212, 197, 236, 0.884);
+      }
+      
+      @-webkit-keyframes fadeInOut {
+        0% { opacity: 1; }
+        25% { opacity: 0; }
+        50% { opacity: 0; }
+        75% { opacity: 1; }
+        }
+        .anim_fade_image {
+            position: absolute;
+            -webkit-animation-name: fadeInOut;
+            -webkit-animation-timing-function: ease-in-out;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-duration: 12s;
+            -webkit-animation-direction: alternate;
+        }
+        .word{
+            color:rgb(100, 32, 168);
+            font-size: 25px;
+            font-family:DFKai-sb;
+            text-align: center;
+        }
+        div  {float: left; }
+
+
+      </style>
+      <script>        
+        var music=["","piano.mp3","flute.mp3","guitar.mp3","violin.mp3"];
+		var num=0;
+        var audio;      
+
+         function one() {
+            if(num!=0) audio.pause();
+            if(num==1) audio.pause();
+            else {
+                num=1;
+                audio = new Audio(music[num]);
+                audio.play();
+                audio.loop = true;
+            };
+        } 
+
+        function two() {
+            if(num!=0) audio.pause();
+            if(num==2) audio.pause();
+            else {
+                num=2;
+                audio = new Audio(music[num]);
+                audio.play();
+                audio.loop = true;
+            }
+        } 
+
+        function three() {
+            if(num!=0) audio.pause();
+            if(num==3) audio.pause();
+            else {
+                num=3;
+                audio = new Audio(music[num]);
+                audio.play();
+                audio.loop = true;
+            }
+        } 
+
+        function four() {
+            if(num!=0) audio.pause();
+            if(num==4) audio.pause();
+            else {
+                num=4;
+                audio = new Audio(music[num]);
+                audio.play();
+                audio.loop = true;
+            }
+        } 
+
+
+        </script>
+        </head>
+        <body>
+             <h2 class="animated bounce" style="animation-duration: 5s;animation-iteration-count:10">
+                    <marquee behavior="alternate">
+                        <img src="instrument field.jpg" height="200px" width="625px" border="0"></img> 
+                    </marquee>        
+             </h2>
+             <a href="../index.html"><img src="home.png" width="150px" style="position:absolute; top:35px; right:40px;"></a>
+             <a href="../music.html"><img src="back.png" width="150px" style="position:absolute; top:35px; left:40px;"></a>
+
+             <div>
+                      <a href="piano.html">
+                        <img class="anim_fade_image" src="piano.jpg" height="250px" width="250px" border="0"/>
+                        </a>
+                      <img src="realpiano.png" height="220px" width="250px" border="0"/>
+                      <input type = "button" value = "鋼琴" style="width: 40px;" onclick="one()"> 
+            </div>
+
+             
+             <div>
+                <a href="flute.html">
+                <img class="anim_fade_image" src="flute!.jpg" height="250px" width="250px" border="0"/>
+                </a>
+                <img src="realflute.png" height="220px" width="250px" border="0" />
+                <input id = "play" type = "button" value = "長笛" style="width: 40px;" onclick="two()"> 
+            </div>
+
+             <div>
+                <a href="guitar.html">
+                <img class="anim_fade_image" src="guitar.jpg" height="250px" width="250px" border="0"/>
+                </a>
+                <img src="realguitar.png" height="220px" width="250px" border="0"/>
+                <input id = "play" type = "button" value = "吉他" style="width: 42px;" onclick="three()"> 
+            </div>
+
+             <div>
+                <a href="violin.html">
+                <img class="anim_fade_image" src="violin.jpg" height="250px" width="250px" border="0"/>
+                </a>
+                <img src="realviolin.png" height="220px" width="250px" border="0"/>
+                <input id = "play" type = "button" value = "小提琴" style="width: 55px;" onclick="four()"> 
+            </div>
+             <div class="word" ><br>Click the button to hear the sound of instrument</div>
+             <div class="word" ><br>Click the picture to learn how to play the instrument</div>
+
+            <img src="sheet-music.gif" width="100%" >
+        
+        </body>
+</html>
