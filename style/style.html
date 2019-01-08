@@ -25,8 +25,8 @@
         }
 
         ul li{
-            float:left;
-            margin-right:1px;
+            display: inline;
+            width: 16%;
             list-style-type:none;
             font-family: 標楷體;
             text-align: center;
@@ -36,11 +36,11 @@
             font-size:2em;
             font-weight:bold;
             color:#FFF;
+            width: calc(100% - 1px);
             text-decoration:none;
             display:block;
-            width:169px;
             padding:15px 20px;
-            background:rgb(97, 142, 210);
+            background-color:rgb(97, 142, 210);
         }
 
         ul li a:hover{
@@ -49,10 +49,13 @@
         }
 
         ul li a.current{
+            text-align: center;
             background:#F5F4F2;
             color:rgb(0, 105, 109);
         }
-
+        li{
+            text-align: center;
+        }
 
         #contents{
             clear:both;

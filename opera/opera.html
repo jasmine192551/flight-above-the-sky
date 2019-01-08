@@ -7,12 +7,19 @@
       <style type = "text/css">
       body{
            background-color:#C1ECFA;
-           onload ="MakeSnow()";
+           width: 100%;
+           height:100%;
+           margin:0;
       }
       .snow{
           font-size: 1000px;
           color: #FFFFFF;
           position: absolute;
+      }
+      .container{
+         width: 100%;
+         display: inline-flex;
+         justify-content: space-around;
       }
       </style>
       <script src="snow.js" type="text/javascript">
@@ -45,66 +52,62 @@
                     }
              },50);
          }
+         window.onload();
         </script>
          <embed src="BGM.mp3" autostart="true" loop="true" hidden="true" ></embed>
         </head>
-        <body>
+        <body onload="MakeSnow();">
              <marquee behavior="alternate">
                 <img src="welcome.jpg" height="250px" width="1000px" border="0"></img> 
-             </marquee>    
-             <img src="bluespace.jpg" height="250px" width="100px" border="0">
+             </marquee>  
+               
+             <div class="container">
 
-             <a href="carmenopera.html" style="text-decoration:none;">
-                      <img src="Carmen.jpg" height="250px" width="275px" border="0"></img>
-             </a>
+               <a href="carmenopera.html" style="text-decoration:none;">
+                        <img src="Carmen.jpg" height="250px" width="275px" border="0"></img>
+               </a>
 
-             <img src="bluespace.jpg" height="250px" width="100px" border="0"></img>
-
-             <a href="girl.html" style="text-decoration:none;">
-                <img src="girl.jpg" height="250px" width="275px" border="0"></img>
-             </a>
+               
+               <a href="girl.html" style="text-decoration:none;">
+                  <img src="girl.jpg" height="250px" width="275px" border="0"></img>
+               </a>
+               
+               
+               <a href="Romeo.html" style="text-decoration:none;">
+                  <img src="Romeo and Juliet.jpg" height="250px" width="275px" border="0"></img><br>
+               </a>
+             </div> 
+            <div class="container">
+               <a href="shadow.html" style="text-decoration:none;">
+                  <img src="shadow.jpg" height="250px" width="275px" border="0"></img>
+               </a>
+               
+               
+               <a href="wedding.html" style="text-decoration:none;">
+                  <img src="marry.jpg" height="250px" width="275px" border="0"></img>
+               </a>
+               
+               
+               <a href="monster.html" style="text-decoration:none;">
+                  <img src="monster.jpg" height="250px" width="275px" border="0"></img><br>
+               </a>
+             </div>
              
-             <img src="bluespace.jpg" height="250px" width="100px" border="0"></img>
-
-             <a href="Romeo.html" style="text-decoration:none;">
-                <img src="Romeo and Juliet.jpg" height="250px" width="275px" border="0"></img><br>
-             </a>
-             
-             <img src="bluespace.jpg" height="250px" width="100px" border="0"></img>
-
-             <a href="shadow.html" style="text-decoration:none;">
-                <img src="shadow.jpg" height="250px" width="275px" border="0"></img>
-             </a>
-             
-             <img src="bluespace.jpg" height="250px" width="100px" border="0"></img>
-
-             <a href="wedding.html" style="text-decoration:none;">
-                <img src="marry.jpg" height="250px" width="275px" border="0"></img>
-             </a>
-             
-             <img src="bluespace.jpg" height="250px" width="100px" border="0"></img>
-
-             <a href="monster.html" style="text-decoration:none;">
-                <img src="monster.jpg" height="250px" width="275px" border="0"></img><br>
-             </a>
-             
-             <img src="bluespace.jpg" height="250px" width="100px" border="0"></img>
-
-             <a href="flute.html" style="text-decoration:none;">
-                <img src="flute.jpg" height="250px" width="275px" border="0"></img>
-             </a>
-             
-             <img src="bluespace.jpg" height="250px" width="100px" border="0"></img>
-
-             <a href="princess.html" style="text-decoration:none;">
-                <img src="princess.jpg" height="250px" width="275px" border="0"></img>
-             </a>
-             
-             <img src="bluespace.jpg" height="250px" width="100px" border="0"></img>
-
-             <a href="butterfly.html" style="text-decoration:none;">
-                <img src="butterfly.jpg" height="250px" width="275px" border="0"></img><br>
-             </a>
+             <div class="container">
+               <a href="flute.html" style="text-decoration:none;">
+                  <img src="flute.jpg" height="250px" width="275px" border="0"></img>
+               </a>
+               
+               
+               <a href="princess.html" style="text-decoration:none;">
+                  <img src="princess.jpg" height="250px" width="275px" border="0"></img>
+               </a>
+               
+               
+               <a href="butterfly.html" style="text-decoration:none;">
+                  <img src="butterfly.jpg" height="250px" width="275px" border="0"></img><br>
+               </a>
+            </div>
              <a href="../index.html"><img src="home.png" width="150" style="position:absolute; top:35px; right:40px;"></a>
              <a href="../music.html"><img src="back.png" width="150" style="position:absolute; top:35px; left:40px;"></a>
         </body>

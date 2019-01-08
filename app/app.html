@@ -5,19 +5,22 @@
         <title>app</title>
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
         <style type = "text/css">
-            body {background-color:sandybrown}
+            body {
+                background-color:sandybrown;
+                margin: 0%;
+                width: 100%;
+                height: 100%;
+            }
 
-            div  {float: left;
+            div  {
                   text-align: center;
-                  font-size: 2em;
+                  font-size: 30px;
                  }
             div:hover {
-                  float: left;
                   text-align: center;
-                  font-size: 3.5em;
+                  font-size: 35px;
                   color:red;
-                  width:300px;
-                 }
+            }
             #pic:hover {
                   width:280px;
                   height:280px;
@@ -34,6 +37,19 @@
                   color:red;
                   width:300px;
                  } 
+            .container-left{
+                width: 100%;
+                display: inline-flex;
+                justify-content: flex-start;
+            }
+            .container-right{
+                width: 100%;
+                display: inline-flex;
+                justify-content: flex-end;
+            }
+            div{
+                margin-left:2px;
+            }
         </style>
     </head>
     <body>
@@ -41,20 +57,23 @@
         <h2 align="center" class="animated infinite pulse"><font face="標楷體" style=color:gray>(請按圖片至連結)↘</font></h2><br><br>
         <a href="../index.html"><img src="home.png" width="150" style="position:absolute; top:35px; right:40px;"></a>
         <a href="../music.html"><img src="back.png" width="150" style="position:absolute; top:35px; left:40px;"></a>
-        <div><a target="_blank" href = "https://www.youtube.com/"><img src = "1Youtube.png" id="pic" width = "250" height = "250"></a><br><br><font face="fantasy">Youtube</font></div>
-        <div><a target="_blank" href = "https://music.youku.com/"><img src = "2優酷音樂.jpg" id="pic" width = "250" height = "250"></a><br><br><font face="微軟正黑體">優酷音樂</font></div>
-        <div><a target="_blank" href = "https://music.douban.com/"><img src = "3豆瓣音樂.jpg" id="pic"width = "250" height = "250"></a><br><br><font face="微軟正黑體">豆瓣音樂</font></div>
-        <div><a target="_blank" href = "https://www.apple.com/tw/apple-music/"><img src = "4Apple music.jpg" id="pic"width = "250" height = "250"></a><br><br><font face="fantasy">Apple music</font></div>
-        
-        <span><a target="_blank" href = "https://www.mymusic.net.tw/ux/w/main/999"><br><img src = "8MyMusic.png" id="pic" width = "250" height = "250"></a><br><br><font face="fantasy">MyMusic</font></span>
-        <span><a target="_blank" href = "https://www.melon.com/"><br><img src = "5Melon.png" id="pic" width = "250" height = "250"></a><br><br><font face="fantasy">Melon</font></span>
-        <span><a target="_blank" href = "https://www.spotify.com/tw/"><br><img src = "6spotify.png" id="pic" width = "250" height = "250"></a><br><br><font face="fantasy">Spotify</font></span>
-        <span><a target="_blank" href = "http://www.9ku.com/"><br><img src = "7九酷音樂.jpg" id="pic" width = "250" height = "250"></a><br><br><font face="微軟正黑體">九酷音樂</font></span>
-
-        <div><a target="_blank" href = "https://omusic.friday.tw/index.php"><br><img src = "12friday.png" id="pic" width = "250" height = "250"></a><br><br><font face="fantasy">Friday</font></div>
-        <div><a target="_blank" href = "https://www.1ting.com/"><br><img src = "9一聽音樂.png" id="pic" width = "250" height = "250"></a><br><br><font face="微軟正黑體">一聽音樂</font></div>
-        <div><a target="_blank" href = "http://www.kuwo.cn/"><br><img src = "10酷我音樂.jpg" id="pic" width = "250" height = "250"></a><br><br><font face="微軟正黑體">酷我音樂</font></div>
-        <div><a target="_blank" href = "https://www.kkbox.com"><br><img src = "11kkbox.png" id="pic" width = "250" height = "250"></a><br><br><font face="fantasy">Kkbox</font></div>
-    
+        <div class="container-left">
+            <div><a target="_blank" href = "https://www.youtube.com/"><img src = "1Youtube.png" id="pic" width = "250" height = "250"></a><br><br><font face="fantasy">Youtube</font></div>
+            <div><a target="_blank" href = "https://music.youku.com/"><img src = "2優酷音樂.jpg" id="pic" width = "250" height = "250"></a><br><br><font face="微軟正黑體">優酷音樂</font></div>
+            <div><a target="_blank" href = "https://music.douban.com/"><img src = "3豆瓣音樂.jpg" id="pic"width = "250" height = "250"></a><br><br><font face="微軟正黑體">豆瓣音樂</font></div>
+            <div><a target="_blank" href = "https://www.apple.com/tw/apple-music/"><img src = "4Apple music.jpg" id="pic"width = "250" height = "250"></a><br><br><font face="fantasy">Apple music</font></div>
+        </div>   
+        <div class="container-right">
+            <div><a target="_blank" href = "https://www.mymusic.net.tw/ux/w/main/999"><br><img src = "8MyMusic.png" id="pic" width = "250" height = "250"></a><br><br><font face="fantasy">MyMusic</font></div>
+            <div><a target="_blank" href = "https://www.melon.com/"><br><img src = "5Melon.png" id="pic" width = "250" height = "250"></a><br><br><font face="fantasy">Melon</font></div>
+            <div><a target="_blank" href = "https://www.spotify.com/tw/"><br><img src = "6spotify.png" id="pic" width = "250" height = "250"></a><br><br><font face="fantasy">Spotify</font></div>
+            <div><a target="_blank" href = "http://www.9ku.com/"><br><img src = "7九酷音樂.jpg" id="pic" width = "250" height = "250"></a><br><br><font face="微軟正黑體">九酷音樂</font></div>
+        </div>
+        <div class="container-left">
+            <div><a target="_blank" href = "https://omusic.friday.tw/index.php"><br><img src = "12friday.png" id="pic" width = "250" height = "250"></a><br><br><font face="fantasy">Friday</font></div>
+            <div><a target="_blank" href = "https://www.1ting.com/"><br><img src = "9一聽音樂.png" id="pic" width = "250" height = "250"></a><br><br><font face="微軟正黑體">一聽音樂</font></div>
+            <div><a target="_blank" href = "http://www.kuwo.cn/"><br><img src = "10酷我音樂.jpg" id="pic" width = "250" height = "250"></a><br><br><font face="微軟正黑體">酷我音樂</font></div>
+            <div><a target="_blank" href = "https://www.kkbox.com"><br><img src = "11kkbox.png" id="pic" width = "250" height = "250"></a><br><br><font face="fantasy">Kkbox</font></div>
+        </div>
     </body>
 </html>            

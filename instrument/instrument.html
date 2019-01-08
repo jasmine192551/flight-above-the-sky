@@ -8,6 +8,9 @@
       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
       <style type = "text/css">
       body{
+           width: 100%;
+           height: 100%;
+           margin: 0;
            background-color:rgba(212, 197, 236, 0.884);
       }
       
@@ -31,8 +34,11 @@
             font-family:DFKai-sb;
             text-align: center;
         }
-        div  {float: left; }
-
+        .container{
+            width : 100%;
+            display: inline-flex;
+            justify-content: space-around;
+        }
 
       </style>
       <script>        
@@ -95,40 +101,41 @@
              </h2>
              <a href="../index.html"><img src="home.png" width="150px" style="position:absolute; top:35px; right:40px;"></a>
              <a href="../music.html"><img src="back.png" width="150px" style="position:absolute; top:35px; left:40px;"></a>
+            <div class="container">
+                <div>
+                        <a href="piano.html">
+                            <img class="anim_fade_image" src="piano.jpg" height="250px" width="250px" border="0"/>
+                            </a>
+                        <img src="realpiano.png" height="220px" width="250px" border="0"/>
+                        <input type = "button" value = "鋼琴" style="width: 40px;" onclick="one()"> 
+                </div>
 
-             <div>
-                      <a href="piano.html">
-                        <img class="anim_fade_image" src="piano.jpg" height="250px" width="250px" border="0"/>
-                        </a>
-                      <img src="realpiano.png" height="220px" width="250px" border="0"/>
-                      <input type = "button" value = "鋼琴" style="width: 40px;" onclick="one()"> 
-            </div>
+                
+                <div>
+                    <a href="flute.html">
+                    <img class="anim_fade_image" src="flute!.jpg" height="250px" width="250px" border="0"/>
+                    </a>
+                    <img src="realflute.png" height="220px" width="250px" border="0" />
+                    <input id = "play" type = "button" value = "長笛" style="width: 40px;" onclick="two()"> 
+                </div>
 
-             
-             <div>
-                <a href="flute.html">
-                <img class="anim_fade_image" src="flute!.jpg" height="250px" width="250px" border="0"/>
-                </a>
-                <img src="realflute.png" height="220px" width="250px" border="0" />
-                <input id = "play" type = "button" value = "長笛" style="width: 40px;" onclick="two()"> 
-            </div>
+                <div>
+                    <a href="guitar.html">
+                    <img class="anim_fade_image" src="guitar.jpg" height="250px" width="250px" border="0"/>
+                    </a>
+                    <img src="realguitar.png" height="220px" width="250px" border="0"/>
+                    <input id = "play" type = "button" value = "吉他" style="width: 42px;" onclick="three()"> 
+                </div>
 
-             <div>
-                <a href="guitar.html">
-                <img class="anim_fade_image" src="guitar.jpg" height="250px" width="250px" border="0"/>
-                </a>
-                <img src="realguitar.png" height="220px" width="250px" border="0"/>
-                <input id = "play" type = "button" value = "吉他" style="width: 42px;" onclick="three()"> 
-            </div>
-
-             <div>
-                <a href="violin.html">
-                <img class="anim_fade_image" src="violin.jpg" height="250px" width="250px" border="0"/>
-                </a>
-                <img src="realviolin.png" height="220px" width="250px" border="0"/>
-                <input id = "play" type = "button" value = "小提琴" style="width: 55px;" onclick="four()"> 
-            </div>
-             <div class="word" ><br>Click the button to hear the sound of instrument</div>
+                <div>
+                    <a href="violin.html">
+                    <img class="anim_fade_image" src="violin.jpg" height="250px" width="250px" border="0"/>
+                    </a>
+                    <img src="realviolin.png" height="220px" width="250px" border="0"/>
+                    <input id = "play" type = "button" value = "小提琴" style="width: 55px;" onclick="four()"> 
+                </div>
+            </div> 
+            <div class="word" ><br>Click the button to hear the sound of instrument</div>
              <div class="word" ><br>Click the picture to learn how to play the instrument</div>
 
             <img src="sheet-music.gif" width="100%" >
